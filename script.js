@@ -72,3 +72,32 @@ console.log(moreAvengers);
 
 // 4f
 console.log(nat, others);
+
+//BONUS TERRITORY
+const bonus = {
+  first: [1, 2, 3],
+  second: [4, 5, 6],
+  third: [7, 8, 9]
+};
+console.log(bonus);
+// // 5a 
+const all = bonus.first.concat(bonus.second, bonus.third);
+// another way to solve
+// const all = [...bonus.first, ...bonus.second, ...bonus.third];
+// console.log(first);
+
+//5b
+const [
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eight,
+  nine
+] = all;
+// console.log(nine);
+
+
