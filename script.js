@@ -41,9 +41,11 @@ const disneyJunior = [
 
 // 3b
 const [mickey, spidey] = disneyJunior;
-console.log(disneyJunior);
-//another way to solve
+
+// 3c
 console.log(mickey, spidey);
+//another way to solve
+console.log(disneyJunior);
 
 // 4a
 const avengers = {
@@ -54,10 +56,11 @@ console.log(avengers);
 
 // 4b
 const {warMachine, theHulk} = avengers;
-console.log(avengers);
+
 // 4c
-//another way to solve
 console.log(warMachine, theHulk);
+//another way to solve
+console.log(avengers);
 
 // 4d
 const moreAvengers = {
@@ -81,23 +84,42 @@ const bonus = {
 };
 console.log(bonus);
 // // 5a 
-const all = bonus.first.concat(bonus.second, bonus.third);
+const all = [...bonus.first, ...bonus.second, ...bonus.third];
 // another way to solve
-// const all = [...bonus.first, ...bonus.second, ...bonus.third];
+// const all = [
+//   ...bonus.first,
+//   ...bonus.second,
+//   ...bonus.third
+// ];
+console.log(all);
 // console.log(first);
 
 //5b
-const [
-  one,
-  two,
-  three,
-  four,
-  five,
-  six,
-  seven,
-  eight,
-  nine
-] = all;
-// console.log(nine);
+const {first, second, third} = bonus;
+const [one, two, three] = first;
+const [four, five, six] = second;
+const [seven, eight, nine] = third;
+console.log(one, two, three, four, five, six, seven, eight, nine);
+
+// OR
+// const [one, two, three] = bonus.first;
+// const [four, five, six] = bonus.second;
+// const [seven, eight, nine] = bonus.third;
+// console.log(one, two, three, four, five, six, seven, eight, nine);
+
+// Destructuring the all array
+// const [
+//   one,
+//   two,
+//   three,
+//   four,
+//   five,
+//   six,
+//   seven,
+//   eight,
+//   nine
+// ] = all;
+// console.log(one, two, three, four, five, six, seven, eight, nine);
+
 
 
